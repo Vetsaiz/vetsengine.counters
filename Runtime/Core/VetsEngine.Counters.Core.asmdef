@@ -1,0 +1,16 @@
+{
+    "name": "VetsEngine.Counters.Core",
+    "references": [
+        "GUID:25e58014b0a8b714e83c4c44d86f66ae",
+        "GUID:dda6dfbf09629034890f3d6e3faf5241"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
