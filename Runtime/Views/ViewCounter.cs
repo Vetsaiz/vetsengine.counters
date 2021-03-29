@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+
 //using VetsEngine.Systems.Transitions.States;
 
 namespace VetsEngine.Systems.Counters.Views
@@ -12,7 +13,7 @@ namespace VetsEngine.Systems.Counters.Views
         protected int _minValue = 0;
 
         [SerializeField]
-        protected TextMeshProUGUI _counterText = null;
+        protected Text _counterText = null;
         
         [SerializeField]
         string _format = "{0}";
