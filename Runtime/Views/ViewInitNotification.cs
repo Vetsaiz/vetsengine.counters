@@ -25,7 +25,7 @@ namespace Sample.Notifications.UI
             foreach (var temp in ids) {
                 _root += $".{temp}";
             }
-            var id = NotificationCreator.CreateId(_root);
+            var id = _service.CreateId(_root);
             _service.GetNotification(id).Subscribe(x => {
                 _notification?.SetValue(x);
             }).AddTo(gameObject);

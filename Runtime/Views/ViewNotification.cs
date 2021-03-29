@@ -21,7 +21,7 @@ namespace Sample.Notifications.UI
 
         public void Start() {
 
-            var id = NotificationCreator.CreateId(_id);
+            var id = _service.CreateId(_id);
             _service.GetNotification(id).Subscribe(x => {
                 _notification?.SetValue(x);
             }).AddTo(gameObject);

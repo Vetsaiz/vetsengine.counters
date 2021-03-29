@@ -25,7 +25,7 @@ namespace Sample.Notifications.UI
 
         public void Start() {
 
-            var id = SampleNotificationIds.CreateSubComplexId(_id, _subId);
+            var id = _service.CreateSubComplexId(_id, _subId);
 
             _service.GetNotification(id).Subscribe(x => {
                 _notification?.SetValue(x);
@@ -34,7 +34,7 @@ namespace Sample.Notifications.UI
         }
 
         private void OnClear() {
-            _service.ClearNotify(SampleNotificationIds.CreateSubComplexId(_id, _subId));
+            _service.ClearNotify(_service.CreateSubComplexId(_id, _subId));
         }
     }
 }

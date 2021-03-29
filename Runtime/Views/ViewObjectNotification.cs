@@ -22,7 +22,7 @@ namespace Sample.Notifications.UI
 
         public void Start() {
 
-            var id = SampleNotificationIds.CreateComplexId(_id);
+            var id = _service.CreateComplexId(_id);
             _service.GetNotification(id).Subscribe(x => {
                 _notification?.SetValue(x);
             }).AddTo(gameObject);
@@ -30,7 +30,7 @@ namespace Sample.Notifications.UI
         }
 
         private void OnClear() {
-            _service.ClearNotify(SampleNotificationIds.CreateComplexId(_id));
+            _service.ClearNotify(_service.CreateComplexId(_id));
         }
     }
 }

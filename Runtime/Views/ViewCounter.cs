@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using VetsEngine.LibCore.Notifications;
 
 //using VetsEngine.Systems.Transitions.States;
 
@@ -65,6 +66,11 @@ namespace VetsEngine.Systems.Counters.Views
             public StateCounter CounterState;
 
             public string TransactionState;
+        }
+
+        public void SetValue(ICounterId counterId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

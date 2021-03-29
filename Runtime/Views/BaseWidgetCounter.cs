@@ -21,7 +21,7 @@ namespace VetsEngine.Systems.Counters.Views
 
         public void Start() {
 
-            var builder = _service.Creator.Builder;
+            var builder = CounterCreator.Builder;
             _root.ForEach(x => builder.AddNode(x.ToString()));
             _notifyId = builder.Build();
             _service.GetNotification(_notifyId).Subscribe(x => {
